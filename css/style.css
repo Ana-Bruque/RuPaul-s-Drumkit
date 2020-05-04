@@ -2,7 +2,11 @@ html {
   position: relative;
   font-size: 10px;
   height: 100vh;
-  background: url('../img/_mg_4392.jpg') center center;
+}
+
+body {
+  background-image: url('../img/bg.jpg');
+  background-position: center center;
   background-size: cover;
   z-index: -1;
 }
