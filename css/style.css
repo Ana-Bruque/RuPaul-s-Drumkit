@@ -1,0 +1,68 @@
+html {
+  position: relative;
+  font-size: 10px;
+  height: 100vh;
+}
+html:before{
+  content:"";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: url('../img/_mg_4392.jpg') center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  height: 15vh;
+}
+
+.logo {
+  width: 450px;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 82vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid #4169e1;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10.5rem;
+  height: 8rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 .5rem black;
+}
+
+.key.is-playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.key kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.key span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: fuchsia;
+}
